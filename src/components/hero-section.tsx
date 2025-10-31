@@ -30,7 +30,7 @@ export default function HeroSection() {
           >
             <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-white/80 backdrop-blur-sm border border-slate-200">
               <Sparkles className="w-4 h-4 mr-2 text-slate-600" />
-              Available for Freelance Projects
+              Available for Fulltime work
             </Badge>
           </motion.div>
 
