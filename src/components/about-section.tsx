@@ -12,12 +12,12 @@ import {
   Zap,
   Sparkles,
   Award,
-  CheckCircle2
+  CheckCircle2,
 } from "lucide-react";
 
 export default function AboutSection() {
   const skills = [
-    { icon: <Target className="w-6 h-6" />, title: "Social Media Strategy", color: "from-cyan-400 to-cyan-600" },
+    { icon: <Target className="w-6 h-6" />, title: "Social Media Strategy", color: "from-cyan-400 to-cyan-600", slug : "socialMediaStrategi" },
     { icon: <Lightbulb className="w-6 h-6" />, title: "Campaign Ideation", color: "from-purple-400 to-purple-600" },
     { icon: <Calendar className="w-6 h-6" />, title: "Content Planning", color: "from-pink-400 to-pink-600" },
     { icon: <TrendingUp className="w-6 h-6" />, title: "Paid Ads Optimization", color: "from-cyan-400 to-cyan-600" },
@@ -47,7 +47,7 @@ export default function AboutSection() {
         "Deep dive analytics & audience insights",
         "Competitor analysis & market research",
         "Performance tracking & optimization"
-      ]
+      ],
     },
     {
       icon: <Zap className="w-10 h-10" />,
@@ -94,9 +94,9 @@ export default function AboutSection() {
               About Me
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
+          {/* <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
             Transforming data into creative strategies that drive real business results
-          </p>
+          </p> */}
         </div>
 
         {/* Story Section with Photo - Enhanced */}
@@ -140,21 +140,15 @@ export default function AboutSection() {
                   
                   <div className="prose prose-lg max-w-none text-slate-700 relative space-y-6">
                     <p className="text-xl leading-relaxed font-light">
-                      Perjalanan saya di dunia social media dimulai dari ketertarikan mendalam terhadap 
-                      bagaimana data dapat menceritakan kisah sebuah brand. Dari awal karier, saya percaya 
-                      bahwa <span className="font-bold text-slate-900 relative inline-block">
-                        campaign yang sukses bukan hanya soal konten menarik, 
-                        tetapi juga pemahaman mendalam tentang behavior dan preferensi audience
+                      Saya adalah seorang Creative Social Media Strategist dengan pengalaman 5 Tahun, 
+                      dengan tugas utama mengelola berbagai campaign menggunakan 
+                      pendekatan yang menggabungkan creative story telling dan data analytics.
+                       Dimulai dengan riset, analisis, dan insight dari data memastikan setiap ide kreatif didukung oleh data yang valid.<span className="mt-6 font-bold italic text-slate-900 relative inline-block">
+                        Campaign yang sukses berbicara tentang konten yang menarik dan memiliki pemahaman mendalam tentang behavior dan preferensi audience.
                         <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500"></span>
                       </span>.
                     </p>
-                    <p className="text-xl leading-relaxed font-light">
-                      Dengan pengalaman mengelola berbagai brand dan campaign, saya telah mengembangkan 
-                      pendekatan unik yang menggabungkan <span className="font-bold bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                      kreativitas storytelling dengan presisi data analytics</span>. Setiap strategi yang 
-                      saya buat selalu dimulai dengan riset mendalam, analisis kompetitor, dan insight 
-                      dari data—memastikan setiap keputusan kreatif didukung oleh angka yang solid.
-                    </p>
+
                   </div>
                 </div>
               </div>
@@ -165,8 +159,8 @@ export default function AboutSection() {
         {/* Skills Grid - Enhanced */}
         <div className="mb-16">
           <div className="text-center mb-8 max-w-6xl mx-auto">
-            <h3 className="text-3xl font-bold text-slate-900 mb-4">Core Expertise</h3>
-            <p className="text-lg text-slate-600">Keahlian yang saya kuasai untuk memaksimalkan hasil campaign</p>
+            <h3 className="text-3xl font-bold text-slate-900 mb-4">Keahlian</h3>
+            {/* <p className="text-lg text-slate-600">Keahlian erbasis Data</p> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {skills.map((skill, index) => (
@@ -198,15 +192,16 @@ export default function AboutSection() {
               <Sparkles className="w-4 h-4 mr-2 text-slate-600" />
               What Sets Me Apart
             </Badge>
-            <h3 className="text-4xl font-bold text-slate-900 mb-4">My Data-Driven Edge</h3>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Keunggulan utama saya adalah kemampuan menganalisis data untuk menciptakan 
-              campaign yang tidak hanya kreatif, tetapi juga terukur dan efektif
+            <h3 className="text-4xl font-bold text-slate-900 mb-4">Keahlian Berbasis Data</h3>
+            <p className="text-lg text-slate-600 max-w-xl mx-auto">
+              Kemampuan menganalisis data untuk menciptakan 
+              campaign yang kreatif, terukur dan efektif.
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {strengths.map((strength, index) => (
+
               <Card 
                 key={index} 
                 className="border-2 border-slate-200 hover:border-transparent bg-white hover:shadow-2xl transition-all duration-500 group relative overflow-hidden"

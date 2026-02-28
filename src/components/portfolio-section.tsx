@@ -159,9 +159,9 @@ export default function PortfolioGrid() {
               Portfolio & Case Studies
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
+          {/* <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
             Dive into my campaign stories — where data meets creativity and strategy drives real results
-          </p>
+          </p> */}
         </div>
 
         {/* Projects Grid 2x2 */}
@@ -288,12 +288,10 @@ export default function PortfolioGrid() {
                   <Sparkles className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-                  Let's Create Your Next Success Story
+                  Let's Collaborate!
                 </h3>
                 <p className="text-base sm:text-lg text-slate-600 mb-8">
-                  Ready to transform your social media presence with data-driven strategies? 
-                  Let's discuss how we can achieve your goals together.
-                </p>
+                  Siap membuat strategi Campaign berbasis Data? Mari kita diskusikan bersama.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     size="lg"
